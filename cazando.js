@@ -14,10 +14,13 @@ function dibujarIniciar(){
     graficaGato()
 }
 function graficaGato(){
-    cxt.fillStyle="red"
-    cxt.fillRect(canvas.width/2,canvas.height-ALTO_GATO,ANCHO_GATO,ALTO_GATO)
+    graficarRectangulo(canvas.width/2,canvas.height-ALTO_GATO,ANCHO_GATO,ALTO_GATO,"orange")
+    
 }
 function graficaComida(){
-    cxt.fillStyle="brown"
-    cxt.fillRect(0,0,ALTO_COMIDA,ANCHO_COMIDA)
+    graficarRectangulo(0,0,ANCHO_COMIDA,ALTO_COMIDA,"brown")
+}
+function graficarRectangulo(x,y,ancho,alto,color){
+    cxt.fillStyle=color
+    cxt.fillRect(x,y,ancho,alto)    
 }
