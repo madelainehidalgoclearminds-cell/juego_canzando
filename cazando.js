@@ -32,19 +32,29 @@ function moverIzquierda(){
     limpiarCanvas()
     graficaGato()
     graficaComida()
+    detectarColision()
 }function moverDerecha(){
     gatoX=gatoX+10
     limpiarCanvas()
     graficaGato()
     graficaComida()
+    detectarColision()
 }function moverArriba(){
     gatoY=gatoY-10
     limpiarCanvas()
     graficaGato()
     graficaComida()
+    detectarColision()
 }function moverAbajo(){
     gatoY=gatoY+10
     limpiarCanvas()
     graficaGato()
     graficaComida()
+    detectarColision()
 }
+ function detectarColision(){
+    if(comidaX+ANCHO_COMIDA> gatoX && comidaX < gatoX+ANCHO_GATO && comidaY+ALTO_COMIDA > gatoY && comidaY < gatoY+ALTO_GATO){
+        alert("comidoo")
+        
+    }
+ }
