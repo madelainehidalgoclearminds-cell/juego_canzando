@@ -32,4 +32,19 @@ function moverIzquierda(){
     limpiarCanvas()
     graficaGato()
     graficaComida()
+}function moverDerecha(){
+    gatoX=gatoX+10
+    limpiarCanvas()
+    graficaGato()
+    graficaComida()
+}function moverArriba(){
+    gatoY=gatoY-10
+    limpiarCanvas()
+    graficaGato()
+    graficaComida()
+}function moverAbajo(){
+    gatoY=gatoY+10
+    limpiarCanvas()
+    graficaGato()
+    graficaComida()
 }
