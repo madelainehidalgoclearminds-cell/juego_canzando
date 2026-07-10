@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Juego Cazando</title>
-  <link href="cazando.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>Juego Cazando</title>
+    <link rel="stylesheet" href="cazando.css">
 </head>
+
 <body onload="dibujarIniciar()">
 
-  <h1>Juego Cazando</h1>
-  <p>Autor:Madelaine</p>
-  <canvas id="areaJuego" width="500" height="500"></canvas>
+<div class="contenedor">
 
-  <div class="controles">
-    <button onclick="moverArriba()">⬆</button>
-    <br>
-    <button onclick="moverIzquierda()">⬅</button>
-    <button onclick="moverAbajo()">⬇</button>
-    <button onclick="moverDerecha()">➡</button>
-    <button onclick="reiniciar()">reiniciar</button>
-  </div>
+    <header class="cabecera">
+        <h1>🏹 Juego Cazando</h1>
+        <p>Autor: <strong>Madelaine</strong></p>
+    </header>
 
+    <div class="juego">
 
-  <div class="panel">
-    <span>Puntos: <span id="puntos">0</span></span>
-    <span>Tiempo: <span id="tiempo">10</span></span>
-  </div>
+        <canvas id="areaJuego" width="500" height="500"></canvas>
 
-  <p id="mensaje"></p>
-  <script src="cazando.js"></script>
-  <script src="util.js"></script>
+        <div class="ladoDerecho">
+
+            <div class="panel">
+
+                <div class="tarjeta">
+                    <span class="tituloPanel">⭐ Puntos</span>
+                    <span id="puntos">0</span>
+                </div>
+
+                <div class="tarjeta">
+                    <span class="tituloPanel">⏳ Tiempo</span>
+                    <span id="tiempo">10</span>
+                </div>
+
+            </div>
+
+            <div class="controles">
+
+                <button onclick="moverArriba()">⬆</button>
+
+                <div class="fila">
+                    <button onclick="moverIzquierda()">⬅</button>
+                    <button onclick="moverAbajo()">⬇</button>
+                    <button onclick="moverDerecha()">➡</button>
+                </div>
+
+                <button class="reiniciar" onclick="reiniciar()">
+                    Reiniciar
+                </button>
+
+            </div>
+
+            <p id="mensaje"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="cazando.js"></script>
+<script src="util.js"></script>
+
 </body>
 </html>

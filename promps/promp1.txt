@@ -1,0 +1,1 @@
+quiero que actues como un diseñador grafico y crea una nueva estetica mas profesional a este juego modifica el html y css ten en cuenta que tienes prohibido cambiar alguna parte del codigo (nombres,variables ,etc) solo edita estetica 
